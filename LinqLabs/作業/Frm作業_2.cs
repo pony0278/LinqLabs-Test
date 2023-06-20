@@ -19,7 +19,7 @@ namespace MyHomeWork
             this.productPhotoTableAdapter1.Fill(this.aaDataSet11.ProductPhoto);
             this.bindingSource1.DataSource = this.aaDataSet11.ProductPhoto;
             this.dataGridView1.DataSource = this.bindingSource1;
-
+            //===
 
             var years = (from order in this.aaDataSet11.ProductPhoto
                          select order.ModifiedDate.Year).Distinct();
